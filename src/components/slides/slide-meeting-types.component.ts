@@ -20,14 +20,14 @@ import { MatIconModule } from '@angular/material/icon';
           <div class="w-20 h-1 bg-emerald-600 mt-4 rounded-full"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           @for (type of meetingTypes; track type.title) {
-            <div class="p-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-              <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+            <div class="p-5 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+              <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-3 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                 <mat-icon class="scale-110">{{ type.icon }}</mat-icon>
               </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">{{ type.title }}</h3>
-              <p class="text-sm text-gray-500 leading-relaxed">
+              <h3 class="text-base font-bold text-gray-900 mb-1">{{ type.title }}</h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed">
                 {{ type.description }}
               </p>
             </div>

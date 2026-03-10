@@ -43,9 +43,15 @@ import { MatIconModule } from '@angular/material/icon';
                 </div>
                 <div>
                   <h4 class="text-red-900 font-bold mb-1 text-sm">The Missing Link</h4>
-                  <p class="text-red-800 leading-relaxed text-xs">
+                  <p class="text-red-800 leading-relaxed text-xs mb-4">
                     Event apps allow users to discover people in the participant list, but they rarely provide tools that help <span class="font-bold text-red-900">convert those discoveries into real meetings</span>.
                   </p>
+                  <div class="pt-4 border-t border-red-200">
+                    <p class="text-[9px] font-bold text-red-600 uppercase tracking-widest mb-1">The Networking Stat</p>
+                    <p class="text-lg font-black text-red-900 italic leading-tight">
+                      "80% of attendees list networking as their primary goal, yet only 15% successfully schedule a 1-on-1 meeting."
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

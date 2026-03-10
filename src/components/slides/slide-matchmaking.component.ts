@@ -48,15 +48,23 @@ import { MatIconModule } from '@angular/material/icon';
           </div>
         </div>
 
-        <div class="p-6 bg-slate-900 rounded-[24px] text-white flex flex-col md:flex-row items-center gap-4 text-left">
+        <div class="p-6 bg-slate-900 rounded-[24px] text-white flex flex-col md:flex-row items-center gap-6 text-left">
           <div class="w-12 h-12 rounded-full bg-violet-500/20 flex items-center justify-center shrink-0">
             <mat-icon class="text-violet-400 text-2xl">auto_awesome</mat-icon>
           </div>
-          <div>
+          <div class="flex-1">
             <h4 class="text-violet-400 text-[9px] font-bold uppercase tracking-widest mb-1">The Capability</h4>
-            <p class="text-lg font-light leading-snug">
-              Introducing <span class="font-bold">Matchmaking Systems</span> that recommend relevant people to connect with based on shared goals and interests.
+            <p class="text-lg font-light leading-snug mb-4">
+              Introducing <span class="font-bold">Matchmaking Systems</span> that recommend relevant people based on shared goals and behavior.
             </p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              @for (signal of dataSignals; track signal) {
+                <div class="px-3 py-1.5 bg-white/5 rounded-lg border border-white/10 flex items-center gap-2">
+                  <mat-icon class="text-[10px] text-violet-400">check_circle</mat-icon>
+                  <span class="text-[10px] text-gray-300 font-medium">{{ signal }}</span>
+                </div>
+              }
+            </div>
           </div>
         </div>
       </div>
@@ -67,4 +75,11 @@ import { MatIconModule } from '@angular/material/icon';
     mat-icon { font-size: 32px; width: 32px; height: 32px; }
   `]
 })
-export class SlideMatchmakingComponent {}
+export class SlideMatchmakingComponent {
+  readonly dataSignals = [
+    'Shared Interests',
+    'Professional Goals',
+    'Session Attendance',
+    'Job Functions'
+  ];
+}
