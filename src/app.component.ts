@@ -6,6 +6,7 @@ import { LogoComponent } from './components/ui/logo.component';
 import { SlideTitleComponent } from './components/slides/slide-title.component';
 import { SlidePurposeComponent } from './components/slides/slide-purpose.component';
 import { SlideGapComponent } from './components/slides/slide-gap.component';
+import { SlideNetworkingStackComponent } from './components/slides/slide-networking-stack.component';
 import { SlideCompetitorsComponent } from './components/slides/slide-competitors.component';
 import { SlideLimitationsComponent } from './components/slides/slide-limitations.component';
 import { SlidePhilosophyComponent } from './components/slides/slide-philosophy.component';
@@ -29,6 +30,7 @@ import { SlideMatchmakingComponent } from './components/slides/slide-matchmaking
     SlideTitleComponent,
     SlidePurposeComponent,
     SlideGapComponent,
+    SlideNetworkingStackComponent,
     SlideCompetitorsComponent,
     SlideLimitationsComponent,
     SlidePhilosophyComponent,
@@ -69,60 +71,65 @@ import { SlideMatchmakingComponent } from './components/slides/slide-matchmaking
         }
         @case (3) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-competitors />
+            <app-slide-networking-stack />
           </div>
         }
         @case (4) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-limitations />
+            <app-slide-competitors />
           </div>
         }
         @case (5) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-philosophy />
+            <app-slide-limitations />
           </div>
         }
         @case (6) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-entry-points />
+            <app-slide-philosophy />
           </div>
         }
         @case (7) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-participant-list />
+            <app-slide-entry-points />
           </div>
         }
         @case (8) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-meeting-types />
+            <app-slide-participant-list />
           </div>
         }
         @case (9) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-meeting-flow />
+            <app-slide-meeting-types />
           </div>
         }
         @case (10) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-calendar />
+            <app-slide-meeting-flow />
           </div>
         }
         @case (11) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-advantages />
+            <app-slide-calendar />
           </div>
         }
         @case (12) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-business-impact />
+            <app-slide-advantages />
           </div>
         }
         @case (13) {
           <div class="w-full h-full animate-fade-in">
-            <app-slide-v1-scope />
+            <app-slide-business-impact />
           </div>
         }
         @case (14) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-v1-scope />
+          </div>
+        }
+        @case (15) {
           <div class="w-full h-full animate-fade-in">
             <app-slide-matchmaking />
           </div>

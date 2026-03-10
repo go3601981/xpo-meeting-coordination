@@ -7,43 +7,43 @@ import { MatIconModule } from '@angular/material/icon';
   standalone: true,
   imports: [CommonModule, MatIconModule],
   template: `
-    <div class="min-h-full flex flex-col justify-center max-w-6xl mx-auto px-6 py-24 lg:py-0 relative overflow-hidden">
+    <div class="min-h-full flex flex-col justify-center max-w-6xl mx-auto px-6 py-12 lg:py-4 relative overflow-hidden">
       <!-- Background Decorative Elements -->
       <div class="absolute top-1/2 right-0 w-80 h-80 bg-red-50/30 rounded-full blur-3xl -translate-y-1/2"></div>
       
       <div class="relative z-10">
-        <div class="mb-12">
-          <h2 class="text-xs font-bold text-red-600 uppercase tracking-[0.3em] mb-4">The Problem</h2>
-          <h1 class="text-4xl md:text-5xl font-bold text-[#1F2937] leading-tight">
+        <div class="mb-6">
+          <h2 class="text-[10px] font-bold text-red-600 uppercase tracking-[0.3em] mb-2">The Problem</h2>
+          <h1 class="text-3xl md:text-4xl font-bold text-[#1F2937] leading-tight">
             The Networking Gap in Event Platforms
           </h1>
-          <div class="w-20 h-1.5 bg-red-600 mt-6 rounded-full"></div>
+          <div class="w-16 h-1 bg-red-600 mt-4 rounded-full"></div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div class="space-y-8">
-            <div class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
-              <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-6">Current Platform Focus</h3>
-              <div class="space-y-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div class="space-y-6">
+            <div class="p-5 bg-white rounded-2xl border border-gray-100 shadow-sm">
+              <h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-4">Current Platform Focus</h3>
+              <div class="space-y-3">
                 @for (feature of currentFeatures; track feature.text) {
-                  <div class="flex items-center gap-4">
-                    <div class="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center text-green-600">
-                      <mat-icon>check_circle</mat-icon>
+                  <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-green-50 flex items-center justify-center text-green-600">
+                      <mat-icon class="text-lg">check_circle</mat-icon>
                     </div>
-                    <span class="text-lg text-gray-700 font-medium">{{ feature.text }}</span>
+                    <span class="text-base text-gray-700 font-medium">{{ feature.text }}</span>
                   </div>
                 }
               </div>
             </div>
 
-            <div class="p-6 bg-red-50 rounded-2xl border border-red-100">
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-600 shrink-0">
-                  <mat-icon>error_outline</mat-icon>
+            <div class="p-5 bg-red-50 rounded-2xl border border-red-100">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-600 shrink-0">
+                  <mat-icon class="text-lg">error_outline</mat-icon>
                 </div>
                 <div>
-                  <h4 class="text-red-900 font-bold mb-2">The Missing Link</h4>
-                  <p class="text-red-800 leading-relaxed text-sm">
+                  <h4 class="text-red-900 font-bold mb-1 text-sm">The Missing Link</h4>
+                  <p class="text-red-800 leading-relaxed text-xs">
                     Event apps allow users to discover people in the participant list, but they rarely provide tools that help <span class="font-bold text-red-900">convert those discoveries into real meetings</span>.
                   </p>
                 </div>
@@ -51,41 +51,41 @@ import { MatIconModule } from '@angular/material/icon';
             </div>
           </div>
 
-          <div class="space-y-8">
-            <div class="relative p-8 bg-white rounded-3xl border border-gray-200 shadow-xl">
-              <h4 class="text-xs font-bold text-gray-400 uppercase tracking-[0.2em] mb-6">Typical Situation</h4>
+          <div class="space-y-6">
+            <div class="relative p-6 bg-white rounded-3xl border border-gray-200 shadow-xl">
+              <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-4">Typical Situation</h4>
               
-              <div class="space-y-6 relative">
+              <div class="space-y-4 relative">
                 <!-- Visual Gap Graphic -->
-                <div class="flex justify-between items-center px-4">
+                <div class="flex justify-between items-center px-2">
                   <div class="text-center">
-                    <div class="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600 mb-2 mx-auto">
-                      <mat-icon class="text-3xl">chat</mat-icon>
+                    <div class="w-12 h-12 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600 mb-1 mx-auto">
+                      <mat-icon class="text-2xl">chat</mat-icon>
                     </div>
-                    <p class="text-xs font-bold text-gray-500 uppercase">Connection</p>
+                    <p class="text-[9px] font-bold text-gray-500 uppercase">Connection</p>
                   </div>
 
-                  <div class="flex-1 h-px bg-dashed border-t-2 border-dashed border-red-300 mx-4 relative">
-                    <mat-icon class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-red-500 bg-white px-1">block</mat-icon>
+                  <div class="flex-1 h-px bg-dashed border-t-2 border-dashed border-red-300 mx-2 relative">
+                    <mat-icon class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-red-500 bg-white px-1 text-sm">block</mat-icon>
                   </div>
 
                   <div class="text-center">
-                    <div class="w-16 h-16 rounded-2xl bg-gray-100 flex items-center justify-center text-gray-400 mb-2 mx-auto">
-                      <mat-icon class="text-3xl">event_available</mat-icon>
+                    <div class="w-12 h-12 rounded-2xl bg-gray-100 flex items-center justify-center text-gray-400 mb-1 mx-auto">
+                      <mat-icon class="text-2xl">event_available</mat-icon>
                     </div>
-                    <p class="text-xs font-bold text-gray-400 uppercase">Actual Meeting</p>
+                    <p class="text-[9px] font-bold text-gray-400 uppercase">Actual Meeting</p>
                   </div>
                 </div>
 
-                <p class="text-lg text-[#4B5563] leading-relaxed text-center italic">
+                <p class="text-base text-[#4B5563] leading-relaxed text-center italic">
                   "People connect in the app, but coordinating an actual meeting becomes difficult and often falls through."
                 </p>
               </div>
             </div>
 
-            <div class="p-8 bg-red-600 rounded-2xl text-white shadow-lg transform hover:scale-[1.02] transition-transform">
-              <h4 class="text-red-200 text-xs font-bold uppercase tracking-[0.2em] mb-4">Key Message</h4>
-              <p class="text-2xl font-bold leading-tight">
+            <div class="p-6 bg-red-600 rounded-2xl text-white shadow-lg">
+              <h4 class="text-red-200 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Key Message</h4>
+              <p class="text-xl font-bold leading-tight">
                 Event apps help people <span class="underline decoration-red-300 underline-offset-4">connect</span>, but not necessarily <span class="text-red-100 italic">meet</span>.
               </p>
             </div>
