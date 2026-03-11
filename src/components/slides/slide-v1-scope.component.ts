@@ -87,31 +87,35 @@ import { MatIconModule } from '@angular/material/icon';
 export class SlideV1ScopeComponent {
   readonly v1Items = [
     { 
-      title: 'Meeting Proposals', 
-      description: 'Direct invitations from profiles or chat with clear status tracking.' 
+      title: 'Hybrid Availability', 
+      description: 'Organizer-blocked windows + Attendee fluid slots.' 
     },
     { 
-      title: 'Time Selection', 
-      description: 'Simple slot-based selection integrated with event schedule.' 
+      title: 'Proactive Prompts', 
+      description: 'Intelligent "Free Window" notifications with one-tap recommendations.' 
     },
     { 
-      title: 'Meeting Type Selection', 
-      description: 'Support for physical locations, virtual links, or custom spots.' 
+      title: 'Welcome Chat Modal', 
+      description: 'Immediate engagement prompt upon first app entry to kickstart networking.' 
     },
     { 
-      title: 'Calendar Invites', 
-      description: 'Automated .ics generation and email sync for external tools.' 
+      title: 'Matchmaking v1', 
+      description: 'Recommendations based on shared interests, goals, and session attendance.' 
+    },
+    { 
+      title: 'Trust & Safety', 
+      description: 'Opt-in networking, mutual consent, and request rate limiting.' 
     }
   ];
 
   readonly futureItems = [
     { 
-      title: 'Intelligent Matchmaking', 
-      description: 'AI-driven attendee pairing based on interests, goals, and behavior.' 
+      title: 'Advanced AI Matchmaking', 
+      description: 'Deep behavioral analysis and real-time interest matching.' 
     },
     { 
-      title: 'Automatic Meeting Suggestions', 
-      description: 'Proactive prompts to meet relevant people during downtime.' 
+      title: 'Group Meeting Coordination', 
+      description: 'Facilitating small group discussions and topical meetups.' 
     },
     { 
       title: 'Networking Analytics', 

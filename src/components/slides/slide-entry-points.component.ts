@@ -23,7 +23,7 @@ import { MatIconModule } from '@angular/material/icon';
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <div class="space-y-6">
             <p class="text-lg text-gray-600 leading-relaxed font-light">
-              The <span class="text-indigo-600 font-semibold">Participant List</span> is often the first place where attendees discover other participants, making it the primary entry point for networking.
+              We create multiple <span class="text-indigo-600 font-semibold">Discovery Channels</span>, ranging from passive browsing to proactive, intelligent suggestions.
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -39,32 +39,23 @@ import { MatIconModule } from '@angular/material/icon';
           </div>
 
           <div class="space-y-8">
-            <!-- Example Flow -->
-            <div class="relative">
-              <h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4">Example Flow</h3>
-              <div class="flex flex-col gap-3">
-                <div class="flex items-center gap-3">
-                  <div class="w-8 h-8 rounded-full bg-indigo-600 text-white flex items-center justify-center text-xs font-bold shadow-lg">1</div>
-                  <div class="flex-1 p-3 bg-white rounded-xl border border-gray-100 shadow-sm">
-                    <p class="text-xs font-semibold text-gray-900">View Profile</p>
-                    <p class="text-[10px] text-gray-500">Discover a relevant attendee or exhibitor</p>
+            <!-- Proactive Prompt Example -->
+            <div class="p-6 bg-indigo-50 rounded-[32px] border-2 border-indigo-200 shadow-xl relative overflow-hidden">
+              <div class="absolute top-0 right-0 p-4">
+                <mat-icon class="text-indigo-200 text-4xl">tips_and_updates</mat-icon>
+              </div>
+              
+              <h3 class="text-[10px] font-bold text-indigo-600 uppercase tracking-widest mb-4">The Proactive Prompt</h3>
+              <div class="bg-white p-4 rounded-2xl shadow-sm border border-indigo-100">
+                <p class="text-xs font-bold text-gray-900 mb-1">"You have a 15min free window at 3:30p"</p>
+                <p class="text-[10px] text-gray-500 mb-3">Do you want to meet someone new? Based on your goals, we recommend:</p>
+                <div class="flex items-center gap-2 p-2 bg-indigo-50 rounded-xl">
+                  <div class="w-8 h-8 rounded-full bg-indigo-200"></div>
+                  <div>
+                    <p class="text-[10px] font-bold text-gray-900">Sarah Jenkins</p>
+                    <p class="text-[8px] text-gray-500">Expert in AI Strategy</p>
                   </div>
-                </div>
-                <div class="ml-4 h-4 border-l-2 border-dashed border-indigo-200"></div>
-                <div class="flex items-center gap-3">
-                  <div class="w-8 h-8 rounded-full bg-indigo-600 text-white flex items-center justify-center text-xs font-bold shadow-lg">2</div>
-                  <div class="flex-1 p-3 bg-white rounded-xl border border-gray-100 shadow-sm">
-                    <p class="text-xs font-semibold text-gray-900">Start Chat</p>
-                    <p class="text-[10px] text-gray-500">Initiate a low-friction conversation</p>
-                  </div>
-                </div>
-                <div class="ml-4 h-4 border-l-2 border-dashed border-indigo-200"></div>
-                <div class="flex items-center gap-3">
-                  <div class="w-8 h-8 rounded-full bg-indigo-600 text-white flex items-center justify-center text-xs font-bold shadow-lg">3</div>
-                  <div class="flex-1 p-3 bg-indigo-50 rounded-xl border border-indigo-100 shadow-sm">
-                    <p class="text-xs font-semibold text-indigo-900">Propose Meeting</p>
-                    <p class="text-[10px] text-indigo-600">Formalize the connection into a scheduled slot</p>
-                  </div>
+                  <button class="ml-auto px-3 py-1 bg-indigo-600 text-white text-[9px] font-bold rounded-lg">Meet</button>
                 </div>
               </div>
             </div>
@@ -76,7 +67,7 @@ import { MatIconModule } from '@angular/material/icon';
                 <h4 class="text-indigo-400 text-[10px] font-bold uppercase tracking-widest">Design Principle</h4>
               </div>
               <p class="text-base font-light italic leading-snug">
-                "Meeting coordination should feel like a <span class="text-indigo-400 font-medium">natural extension</span> of networking, not a separate task."
+                "Don't expect attendees to go on their own and network. <span class="text-indigo-400 font-medium">Encourage it</span> and make it really simple."
               </p>
             </div>
           </div>
@@ -94,6 +85,8 @@ export class SlideEntryPointsComponent {
     { title: 'Participant List', icon: 'groups' },
     { title: 'Attendee Profiles', icon: 'account_circle' },
     { title: 'Exhibitor Profiles', icon: 'storefront' },
-    { title: 'Chat Conversations', icon: 'chat' }
+    { title: 'Chat Conversations', icon: 'chat' },
+    { title: 'Proactive Prompts', icon: 'notifications_active' },
+    { title: 'Welcome Modals', icon: 'waving_hand' }
   ];
 }

@@ -6,7 +6,7 @@ import { Injectable, signal, computed } from '@angular/core';
 export class PresentationService {
   private _currentSlideIndex = signal(0);
   
-  readonly totalSlides = 16;
+  readonly totalSlides = 20;
   
   readonly currentSlideIndex = this._currentSlideIndex.asReadonly();
   

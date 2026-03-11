@@ -19,12 +19,12 @@ import { Component } from '@angular/core';
           <h1 class="text-4xl md:text-5xl font-black text-[#1F2937] leading-[1.1] tracking-tight mb-6">
             Expo Pass <br/>
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              One-on-One Meeting Coordination
+              Intelligent Meeting Coordination
             </span>
           </h1>
           
           <p class="text-xl md:text-2xl text-[#4B5563] font-light leading-snug max-w-2xl">
-            Turning Connections into <span class="font-medium text-gray-900">Real Conversations</span>
+            Proactive Guidance for <span class="font-medium text-gray-900">Meaningful Connections</span>
           </p>
         </div>
 
@@ -32,7 +32,7 @@ import { Component } from '@angular/core';
           <div class="space-y-4">
             <h4 class="text-xs font-bold text-gray-400 uppercase tracking-[0.2em]">Purpose</h4>
             <p class="text-lg text-[#374151] leading-relaxed">
-              Introduce a new capability inside Expo Pass that allows attendees, exhibitors, and organizers to easily coordinate meetings with each other.
+              Evolving Expo Pass from a scheduling tool into an intelligent networking engine that proactively guides attendees toward their goals.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ import { Component } from '@angular/core';
             <h4 class="text-xs font-bold text-gray-400 uppercase tracking-[0.2em]">Key Concept</h4>
             <div class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
               <p class="text-lg text-[#374151] leading-relaxed italic">
-                "Expo Pass will not control meetings or impose schedules. Instead, the platform will help people coordinate meetings naturally <span class="text-blue-600 font-semibold">after they connect</span>."
+                "We don't just provide a calendar; we <span class="text-blue-600 font-semibold">proactively bridge the gap</span> between availability and opportunity."
               </p>
             </div>
           </div>

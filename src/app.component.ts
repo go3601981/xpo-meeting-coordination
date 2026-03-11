@@ -19,6 +19,10 @@ import { SlideAdvantagesComponent } from './components/slides/slide-advantages.c
 import { SlideBusinessImpactComponent } from './components/slides/slide-business-impact.component';
 import { SlideV1ScopeComponent } from './components/slides/slide-v1-scope.component';
 import { SlideMatchmakingComponent } from './components/slides/slide-matchmaking.component';
+import { SlidePersonasComponent } from './components/slides/slide-personas.component';
+import { SlideTrustSafetyComponent } from './components/slides/slide-trust-safety.component';
+import { SlideMetricsComponent } from './components/slides/slide-metrics.component';
+import { SlideNextStepsComponent } from './components/slides/slide-next-steps.component';
 
 @Component({
   selector: 'app-root',
@@ -42,7 +46,11 @@ import { SlideMatchmakingComponent } from './components/slides/slide-matchmaking
     SlideAdvantagesComponent,
     SlideBusinessImpactComponent,
     SlideV1ScopeComponent,
-    SlideMatchmakingComponent
+    SlideMatchmakingComponent,
+    SlidePersonasComponent,
+    SlideTrustSafetyComponent,
+    SlideMetricsComponent,
+    SlideNextStepsComponent
   ],
   template: `
     <app-logo />
@@ -131,7 +139,27 @@ import { SlideMatchmakingComponent } from './components/slides/slide-matchmaking
         }
         @case (15) {
           <div class="w-full h-full animate-fade-in">
+            <app-slide-personas />
+          </div>
+        }
+        @case (16) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-trust-safety />
+          </div>
+        }
+        @case (17) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-metrics />
+          </div>
+        }
+        @case (18) {
+          <div class="w-full h-full animate-fade-in">
             <app-slide-matchmaking />
+          </div>
+        }
+        @case (19) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-next-steps />
           </div>
         }
       }

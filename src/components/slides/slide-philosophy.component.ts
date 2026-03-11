@@ -15,7 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
         <div class="mb-8">
           <h2 class="text-[10px] font-bold text-blue-600 uppercase tracking-[0.3em] mb-2">The Philosophy</h2>
           <h1 class="text-3xl md:text-4xl font-bold text-[#1F2937] leading-tight">
-            Attendee-Driven Meeting Coordination
+            Intelligent Meeting Coordination
           </h1>
           <div class="w-16 h-1 bg-blue-600 mt-4 rounded-full"></div>
         </div>
@@ -25,7 +25,7 @@ import { MatIconModule } from '@angular/material/icon';
             <div class="p-6 bg-blue-600 rounded-3xl shadow-xl text-white relative overflow-hidden">
               <div class="absolute -top-6 -right-6 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
               <h3 class="text-lg font-light leading-relaxed italic mb-4">
-                "Instead of organizers controlling meetings, Expo Pass enables attendees to coordinate meetings <span class="font-bold">directly</span> with each other."
+                "We don't just provide tools; we <span class="font-bold">proactively guide</span> attendees to the right connections at the right time."
               </h3>
               <div class="flex items-center gap-2 text-blue-100 text-xs font-medium">
                 <mat-icon class="text-xs">verified</mat-icon>
@@ -35,19 +35,19 @@ import { MatIconModule } from '@angular/material/icon';
 
             <div class="space-y-3">
               <p class="text-base text-gray-600 leading-relaxed">
-                Expo Pass simply provides the tools that make coordination easy, while leaving the <span class="text-blue-600 font-semibold">agency</span> where it belongs: with the participants.
+                By combining <span class="text-blue-600 font-semibold">attendee agency</span> with <span class="text-blue-600 font-semibold">intelligent prompts</span>, we ensure that networking is both simple to do and impossible to miss.
               </p>
             </div>
           </div>
 
           <div class="grid grid-cols-2 gap-3">
-            @for (decision of decisions; track decision.label) {
+            @for (pillar of pillars; track pillar.label) {
               <div class="p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:border-blue-200 hover:shadow-md transition-all group">
                 <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                  <mat-icon class="text-sm">{{ decision.icon }}</mat-icon>
+                  <mat-icon class="text-sm">{{ pillar.icon }}</mat-icon>
                 </div>
-                <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">{{ decision.label }}</h4>
-                <p class="text-base font-bold text-gray-900">{{ decision.text }}</p>
+                <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">{{ pillar.label }}</h4>
+                <p class="text-base font-bold text-gray-900">{{ pillar.text }}</p>
               </div>
             }
           </div>
@@ -58,7 +58,7 @@ import { MatIconModule } from '@angular/material/icon';
             <mat-icon class="text-sm">auto_fix_high</mat-icon>
           </div>
           <p class="text-gray-600 text-sm text-center md:text-left">
-            By removing the organizer as a bottleneck, we enable <span class="font-semibold text-gray-900">spontaneous, high-value connections</span> that traditional platforms simply can't support.
+            We "spoon-feed" high-value recommendations during free windows, making it <span class="font-semibold text-gray-900">effortless</span> for even the most hesitant attendees to network.
           </p>
         </div>
       </div>
@@ -70,10 +70,10 @@ import { MatIconModule } from '@angular/material/icon';
   `]
 })
 export class SlidePhilosophyComponent {
-  readonly decisions = [
-    { label: 'Who', text: 'Target matches', icon: 'person_add' },
-    { label: 'When', text: 'Mutual availability', icon: 'event_available' },
-    { label: 'Where', text: 'Preferred location', icon: 'place' },
-    { label: 'How', text: 'Meeting format', icon: 'forum' }
+  readonly pillars = [
+    { label: 'Agency', text: 'Attendee-led', icon: 'person_add' },
+    { label: 'Guidance', text: 'Proactive prompts', icon: 'tips_and_updates' },
+    { label: 'Intelligence', text: 'Smart matching', icon: 'psychology' },
+    { label: 'Simplicity', text: 'One-tap booking', icon: 'touch_app' }
   ];
 }
